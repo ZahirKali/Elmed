@@ -3,7 +3,7 @@ package com.ekkerit.elmed.tools;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ApplicationContext;
 
-import com.ekkerit.elmed.testpackage.Application;
+import com.ekkerit.elmed.Application;
 
 /**
  * Contexte Spring de l'application.

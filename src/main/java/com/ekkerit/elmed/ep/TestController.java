@@ -1,4 +1,4 @@
-package com.ekkerit.elmed.testpackage;
+package com.ekkerit.elmed.ep;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;

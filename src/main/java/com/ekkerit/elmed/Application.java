@@ -1,4 +1,4 @@
-package com.ekkerit.elmed.testpackage;
+package com.ekkerit.elmed;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
