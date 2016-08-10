@@ -8,6 +8,7 @@
 	<name>Elmed AAU</name>
 	<description>Aẓi Amiḍan n Umahil - Environnement Numérique de Travail</description>
 
+	<!-- Acteurs du projet. -->
 	<developers>
 		<developer>
 			<id>zkali</id>
@@ -20,6 +21,39 @@
 			<email>kalizahir@yahoo.fr</email>
 		</developer>
 	</developers>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.4.0.RELEASE</version>
+	</parent>
+
+	<dependencies>
+
+		<!-- Couche JPA (Java Persistence Api). Couche permettant de persisiter 
+			les données dans la base. Elle fait les liens entre les objets Java et les 
+			objets de la base de données. -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.2.0.Final</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
