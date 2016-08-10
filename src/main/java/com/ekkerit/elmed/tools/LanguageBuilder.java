@@ -10,7 +10,7 @@ public class LanguageBuilder {
 	 * @param language
 	 * @return
 	 */
-	public Language getLanguageFromString(String language){
+	public static Language getLanguageFromString(String language){
 		/** Le français est la langue par défaut. */
 		if (language == null){
 			return Language.FR;

@@ -8,7 +8,8 @@ import java.io.File;
  */
 public class AppConfiguration {
 
-	public static File getMessageFileConfiguration(String language){
+	public static File getMessageFileConfiguration(String pLanguage){
+		Language language = LanguageBuilder.getLanguageFromString(pLanguage);
 
 		return null;
 	}
