@@ -1,6 +1,7 @@
+package com.ekkerit.elmed.testpackage;
+
 /**
- * Package créé pour faire des tests.
+ * Package crÃ©Ã© pour faire des tests.
  * @author Zahir KALI.
  *
  */
-package com.ekkerit.elmed.testpackage;
