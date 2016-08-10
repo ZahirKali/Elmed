@@ -13,14 +13,15 @@ public class MessageReader {
 	/** Fichier des propriétés. */
 	private static Properties properties = null;
 
-	private InputStream inputStream = null;
+	/** InputStream servant de lire le fichier des propriétes. */
+	private static InputStream inputStream = null;
 
 	/**
 	 * Construire le InputStream et le fichier des propriétés.
 	 * @param language
 	 * 			Langue actuelle.
 	 */
-	public void build(Language language) {
+	public static void build(Language language) {
 		properties = new Properties();
 		if (language == null || language == Language.FR) {
 			inputStream = MessageReader.class.getClassLoader().getResourceAsStream("messages/Message_fr_FR.properties");
@@ -57,8 +58,8 @@ public class MessageReader {
 	 * @return
 	 * 		Le message récupéré.
 	 */
-	public String get(String key) {
-		this.build(null);
+	public static String get(String key) {
+		build(null);
 		return properties.getProperty(key);
 	}
 }
